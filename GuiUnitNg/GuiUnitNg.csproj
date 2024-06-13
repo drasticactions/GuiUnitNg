@@ -3,7 +3,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>GuiUnitNg</RootNamespace>
     <AssemblyName>GuiUnitNg</AssemblyName>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Prefer32Bit>false</Prefer32Bit>
     <DebugType>embedded</DebugType>
     <PackageId>Xamarin.GuiUnitNg</PackageId>
@@ -24,10 +24,10 @@ Like the original GuiUnit, the goal of the runner is to provide integration with
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="ILRepack" Version="2.0.18" PrivateAssets="all" />
-    <PackageReference Include="NUnit" Version="3.12.0" PrivateAssets="all" />
-    <PackageReference Include="NUnitLite" Version="3.12.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
+    <PackageReference Include="ILRepack" Version="2.0.34" PrivateAssets="all" />
+    <PackageReference Include="NUnit" Version="4.1.0" PrivateAssets="all" />
+    <PackageReference Include="NUnitLite" Version="4.1.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="all" />
   </ItemGroup>
 
   <Target Name="_GatherInputAssemblies" Returns="@(InputAssembly)">

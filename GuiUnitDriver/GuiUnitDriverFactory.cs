@@ -24,5 +24,10 @@ namespace GuiUnitDriver
 		{
 			return reference.Name.IndexOf ("GuiUnit", StringComparison.OrdinalIgnoreCase) != -1;
 		}
+
+		public IFrameworkDriver GetDriver(AssemblyName reference)
+		{
+			return new GuiUnitDriver (AppDomain.CurrentDomain);
+		}
 	}
 }

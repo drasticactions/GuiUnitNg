@@ -21,12 +21,9 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
-using System;
-using System.Web.UI;
-
 namespace GuiUnitDriver
 {
-	public class CallbackHandler : MarshalByRefObject, ICallbackEventHandler
+	public class CallbackHandler : MarshalByRefObject
 	{
 		public string Result { get; private set; }
 
